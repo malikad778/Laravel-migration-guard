@@ -1,0 +1,16 @@
+vendor/
+node_modules/
+.env
+.env.*
+!.env.example
+*.cache
+.phpunit.result.cache
+.pest.result.cache
+coverage/
+.DS_Store
+Thumbs.db
+*.log
+/composer.lock
+laravel-migration-guard-spec.docx
+laravel-migration-guard-spec.pdf
+laravel-migration-guard-spec.txt

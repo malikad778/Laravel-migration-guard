@@ -1,0 +1,58 @@
+{
+    "name": "malikad778/laravel-migration-guard",
+    "description": "Catch dangerous database migrations before they reach production. The strong_migrations equivalent for Laravel. Zero configuration. Framework-native.",
+    "keywords": [
+        "laravel",
+        "migration",
+        "guard",
+        "safety",
+        "zero-downtime",
+        "production"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adnan Malik",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/console": "^10.0|^11.0|^12.0",
+        "illuminate/events": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "illuminate/notifications": "^10.0|^11.0|^12.0",
+        "nikic/php-parser": "^5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "pestphp/pest": "^2.0|^3.0",
+        "pestphp/pest-plugin-laravel": "^2.0|^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Malikad778\\MigrationGuard\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Malikad778\\MigrationGuard\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Malikad778\\MigrationGuard\\MigrationGuardServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
